@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap');
+body{
+    width: 100%;
+    background: #000;
+    color:#fff;
+  
+}/* src/RegistrationForm.css */
+
+/* Style the form container */
+.registration-form ,.clgname,.department,.Event,.members,.member,.buttons {
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style headings */
+  .h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Style form labels and inputs */
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  form input[type="text"],
+  form input[type="tel"],
+  form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+  }
+  
+  /* Style required fields */
+  form input[required],
+  form select[required] {
+    border-color: #dc3545;
+  }
+  
+  /* Style validation messages */
+  form input:invalid,
+  form select:invalid {
+    border-color: #dc3545;
+  }
+  
+  form input:invalid + span::before,
+  form select:invalid + span::before {
+    content: "✖";
+    color: #dc3545;
+    position: absolute;
+    top: 0;
+    right: 5px;
+  }
+  
+  form input:valid + span::before,
+  form select:valid + span::before {
+    content: "✔";
+    color: #28a745;
+    position: absolute;
+    top: 0;
+    right: 5px;
+  }
+  
+  /* Style form buttons */
+  form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style reset and home buttons */
+  form button[type="button"]:nth-child(3),
+  form button[type="button"]:nth-child(4) {
+    background-color: #dc3545;
+  }
+  
+  form button[type="button"]:nth-child(3):hover,
+  form button[type="button"]:nth-child(4):hover {
+    background-color: #b52b38;
+  }
+  
+  /* Validation message style */
+  span::before {
+    content: "";
+    font-size: 16px;
+    position: absolute;
+    top: 0;
+    right: 5px;
+  }
+  
+  /* Adjust the spacing of member fields */
+  form div:not(:first-child) {
+    border-top: 1px solid #ccc;
+   
+  }  
+  .error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
